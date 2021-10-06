@@ -5,3 +5,4 @@ for (let count = 0; count < 10; count++) {
   numArray.push(number);
 }
 console.log(numArray);
+let numArrayCopy = [...numArray];
