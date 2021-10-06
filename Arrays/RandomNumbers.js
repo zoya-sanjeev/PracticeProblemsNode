@@ -6,21 +6,7 @@ for (let count = 0; count < 10; count++) {
 }
 console.log(numArray);
 let numArrayCopy = [...numArray];
-let max =0;
-let min=1000;
-for(let i=0; i<numArray.length; i++){
-    if(numArray[i]>max)
-        max=numArray[i];
-    if(numArray[i]<min)
-        min=numArray[i];
-}
-let secondMax=0;
-let secondMin=1000;
-for(let i =0; i< numArray.length; i++){
-    if(numArray[i]> secondMax && numArray[i]!=max)
-        secondMax=numArray[i];
-    if(numArray[i]<secondMin && numArray[i]!= min)
-        secondMin= numArray[i];
-}
-console.log("Second largest number: "+ secondMax);
-console.log("Second smallest number: "+ secondMin);
+numArrayCopy.sort();
+
+console.log("Second largest number: "+ numArrayCopy[1]);
+console.log("Second smallest number: "+ numArrayCopy[8]);
